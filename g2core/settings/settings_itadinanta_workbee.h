@@ -48,9 +48,25 @@
 #define SPINDLE_PAUSE_ON_HOLD       true
 #define SPINDLE_DWELL_TIME          1.0
 
+// *** PWM Settings *** //
+
+#define P1_PWM_FREQUENCY            1000                   // in Hz
+#define P1_CW_SPEED_LO              3500                  // in RPM (arbitrary units)
+#define P1_CW_SPEED_HI              10800
+#define P1_CW_PHASE_LO              0.2                    // phase [0..1]
+#define P1_CW_PHASE_HI              1.0
+#define P1_CCW_SPEED_LO             3500
+#define P1_CCW_SPEED_HI             10800
+#define P1_CCW_PHASE_LO             0.2
+#define P1_CCW_PHASE_HI             1.0
+#define P1_PWM_PHASE_OFF            0.1
+
 #define COOLANT_MIST_POLARITY       1                       // 0=active low, 1=active high
 #define COOLANT_FLOOD_POLARITY      1                       // 0=active low, 1=active high
 #define COOLANT_PAUSE_ON_HOLD       false
+
+
+
 
 // Communications and reporting settings
 
